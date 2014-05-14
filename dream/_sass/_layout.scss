@@ -311,7 +311,8 @@ table.highlight {
 	}
 
 	.article {
-		//font-size: 1.8em;
+		word-wrap: break-word;         
+    overflow-wrap: break-word;     
 	  padding: percentage(10px/$context) percentage(10px/$context);  /* 10px / 920px */ 
 
 		h1, h2, h3, h4, h5, h6 {
