@@ -89,7 +89,7 @@ blockquote {
   padding-left: .5em;
 }
 
-.article > table {
+.post-content > table {
   max-width: 100%;
   min-width: 60%;
   margin: 20px auto;
@@ -278,7 +278,7 @@ table.highlight {
 	}
 }
 
-.content {
+.main-content {
 	@include full_width;
 	@include center_div;
 }
@@ -302,15 +302,19 @@ table.highlight {
 	}
 
 
-	.title {
+	.post-title {
 	  padding: percentage(10px/$context) 0 percentage(10px/$context) percentage(10px/$context);
+
+    h1 {
+      font-size: 4em;
+    }
 
     a {
       color: #000000;
     }
 	}
 
-	.article {
+	.post-content {
 		word-wrap: break-word;         
     overflow-wrap: break-word;     
 	  padding: percentage(10px/$context) percentage(10px/$context);  /* 10px / 920px */ 
@@ -400,6 +404,7 @@ table.highlight {
   
   .search-result-meta {
     margin-bottom: 30px;
+    font-size: 2em;
 
     strong {
       font-weight: bold;
@@ -412,7 +417,7 @@ table.highlight {
     font-weight: bold;
   }
 
-  .article {
+  .post-content {
     font-size: 1.8em;
 
     p {
@@ -425,6 +430,9 @@ table.highlight {
   }
 }
 
+.new-posts {
+  text-align: center;
+}
 
 //pagination
 
